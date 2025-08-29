@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ddd;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #ff9800;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e68900;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #ffffff10;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      margin-top: 50px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <img src="./images/schrodinger cat.jpg" alt="My Image" width="100%" height="100%">
+  <header>
+    <h1>Hello, I'm <span style="color:#ff9800;">Your Name</span></h1>
+    <p>Aspiring Developer • Designer • Creator</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://picsum.photos/300/200?random=1" alt="Project 1">
+        <h3>Project One</h3>
+        <p>A cool project I worked on. Description goes here.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/300/200?random=2" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Another amazing project. Write about it here.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/300/200?random=3" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Something I’m really proud of. Showcase it here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:youremail@example.com" style="color:#ff9800;">youremail@example.com</a></p>
+    <p>LinkedIn: <a href="#" style="color:#ff9800;">My LinkedIn</a></p>
+    <p>GitHub: <a href="#" style="color:#ff9800;">My GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. Built with ❤ using GitHub Pages.</p>
+  </footer>
 </body>
 </html>
